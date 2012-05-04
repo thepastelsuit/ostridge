@@ -23,7 +23,7 @@
     spl_autoload_register( 'Autoloader::load' );
 
     // Create the bot.
-    $bot = new Library\IRC\Bot;
+    $bot = new Library/IRC/Bot;
 
     // Configure the bot.
     $bot->setServer( 'irc.freenode.org' );
@@ -32,14 +32,14 @@
     $bot->setName( 'laynes-bot' );
     $bot->setNick( 'laynes-bot' );
     $bot->setMaxReconnects( 1 );
-    $bot->setLogFile( '/Users/daniel/Sites/dev/irc/irc-bot/logs/test-' );
+    $bot->setLogFile( 'test-' );
 
     // Add commands to the bot.
-    $bot->addCommand( new Command\Say );
-    $bot->addCommand( new Command\Poke );
-    $bot->addCommand( new Command\Timeout );
-    $bot->addCommand( new Command\Quit );
-    $bot->addCommand( new Command\Restart );
+    $bot->addCommand( new Command/Say );
+    $bot->addCommand( new Command/Poke );
+    $bot->addCommand( new Command/Timeout );
+    $bot->addCommand( new Command/Quit );
+    $bot->addCommand( new Command/Restart );
 
     // Connect to the server.
     $bot->connectToServer();
