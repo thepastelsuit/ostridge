@@ -28,9 +28,9 @@
     // Configure the bot.
     $bot->setServer( 'irc.freenode.org' );
     $bot->setPort( 6667 );
-    $bot->setChannel( array('#wildphp') );
-    $bot->setName( 'wildbotz' );
-    $bot->setNick( 'wildbotz' );
+    $bot->setChannel( array('#ostridge') );
+    $bot->setName( 'OSTRIDGE BOT' );
+    $bot->setNick( 'OSTRIDGE' );
     $bot->setMaxReconnects( 1 );
     $bot->setLogFile( 'log-' );
 
