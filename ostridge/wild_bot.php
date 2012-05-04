@@ -23,7 +23,7 @@
     spl_autoload_register( 'Autoloader::load' );
 
     // Create the bot.
-    $bot = new Library\IRC\Bot();
+    $bot = new Library/IRC/Bot();
 
     // Configure the bot.
     $bot->setServer( 'irc.freenode.org' );
@@ -32,16 +32,16 @@
     $bot->setName( 'wildbotz' );
     $bot->setNick( 'wildbotz' );
     $bot->setMaxReconnects( 1 );
-    $bot->setLogFile( 'C:\\Users\\Super3\\Code\\IRC-Bot\\log\\test-' );
+    $bot->setLogFile( 'log-' );
 
     // Add commands to the bot.
-    $bot->addCommand( new Command\Say );
-    $bot->addCommand( new Command\Poke );
-    $bot->addCommand( new Command\Join );
-    $bot->addCommand( new Command\Part );
-    $bot->addCommand( new Command\Timeout );
-    $bot->addCommand( new Command\Quit );
-    $bot->addCommand( new Command\Restart );
+    $bot->addCommand( new Command/Say );
+    $bot->addCommand( new Command/Poke );
+    $bot->addCommand( new Command/Join );
+    $bot->addCommand( new Command/Part );
+    $bot->addCommand( new Command/Timeout );
+    $bot->addCommand( new Command/Quit );
+    $bot->addCommand( new Command/Restart );
 
     // Connect to the server.
     $bot->connectToServer();
